@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import filters, viewsets
 from rest_framework.permissions import IsAuthenticated
 
-from posts.models import Comment, Group, Post, Follow
+from posts.models import Group, Post
 from .pagination import CustomPagination
 from .permissions import OwnerOrReadOnly
 from .serializers import CommentSerializer, FollowSerializer, GroupSerializer
